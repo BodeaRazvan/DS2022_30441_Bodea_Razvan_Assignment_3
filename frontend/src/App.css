@@ -1,0 +1,877 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.myHeader2 {
+  background: linear-gradient(0deg, rgb(169,184,195) 0%, #154944 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.myHeader3 {
+  background: #154944;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.myHeader4 {
+  background: linear-gradient(0deg, #154944  0%, rgb(169,184,195) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  font-family: optima;
+}
+
+.myHeader {
+  background: linear-gradient(0deg, #154944  0%, rgb(169,184,195) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.myHeader5 {
+  background: linear-gradient(0deg, #154944  0%, rgb(169,184,195) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.topAlignTitle{
+  top: 0;
+  width: 100%;
+}
+
+.topAlign{
+  position: relative;
+  top: 60px;
+  width: 50%;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.messageReceiver{
+    background: #154944;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 97%;
+    text-align: left;
+}
+
+.messageTyping{
+  background: #154944;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 97%;
+  text-align: left;
+}
+
+.messageSeen{
+  background: #154944;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 97%;
+  text-align: left;
+}
+
+.messageSender{
+    background: #154944;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 97%;
+    text-align: right;
+}
+
+
+.bottomAlign{
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+}
+
+
+.myPopup {
+  background: white;
+  min-height: 40vh;
+  min-width: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  box-shadow: 0 1em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  border-radius: 3em;
+  border: 5px solid darkgreen;
+  color: black;
+}
+
+.myPopupAlert{
+  position: absolute;
+  top: -500px;
+  left: -160px;
+  background: white;
+  min-height: 45vh;
+  min-width: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  box-shadow: 0 1em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  border-radius: 3em;
+  border: 5px solid darkgreen;
+  color: black;
+}
+
+
+.myButtonModal{
+  transition: all .5s ease;
+  position: relative;
+  display: inline;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ff9100;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  height: 80px;
+}
+
+.myButtonModal:hover{
+  transform: scale(1.1);
+  display: inline;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ff9100;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  height: 80px;
+}
+
+.myLine{
+background: white;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+
+.navbar{
+  width: 100%;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(0deg, #21726A 0%, #33B3A6 100%);
+}
+
+.navBarTitle{
+  font-weight: bold;
+  font-style: italic;
+  top: 0.5vh;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  position: relative;
+  left: -20vw;
+}
+
+.myLogo{
+  width: 6%;
+  height: auto;
+  position: relative;
+  left: -20vw;
+}
+
+.carouselImg{
+  width: 600px;
+  height: 200px;
+}
+
+.cardImage{
+  border-radius: 5%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 675px;
+  height: auto;
+}
+
+.cardImage:hover{
+  border-radius: 5%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+
+.scalingDiv{
+  min-width: 10px;
+}
+
+.scalingDiv:hover{
+  transform: scale(1.01);
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.myButton{
+  transition: all .5s ease;
+  position: relative;
+  display: inline;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ff9100;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  height: 80px;
+}
+
+.myButton:hover{
+  transform: scale(1.1);
+  display: inline;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ff9100;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  height: 80px;
+}
+
+.navbarButton{
+  transition: all .5s ease;
+  position: relative;
+  left: 1600px;
+
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: #ff9100;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+.navbarButton:hover{
+  transform: scale(1.1);
+
+  transition: all .5s ease;
+  position: relative;
+  left: 1600px;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: #ff9100;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+
+.navbarButton2{
+  transition: all .5s ease;
+  position: relative;
+  margin-left: 15px;
+
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: #ff9100;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+.navbarButton2:hover{
+  transform: scale(1.1);
+  margin-left: 15px;
+  transition: all .5s ease;
+  position: relative;
+
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: #ff9100;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+.navbarButton3{
+  transition: all .5s ease;
+  position: relative;
+  margin-left: 15px;
+
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: #ff9100;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+.myLink{
+  text-decoration: none;
+  color: black;
+}
+
+.myLink:hover{
+  text-decoration: none;
+  color: black;
+}
+
+
+.whiteButton{
+  transition: all .5s ease;
+  color: #fff;
+  border: 3px solid #ff9100;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 35px;
+  background-color : #ff9100;
+  padding: 30px;
+  outline: none;
+  border-radius: 50%;
+}
+
+.whiteButton:hover{
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #ff9100;
+}
+
+.imageTextIban{
+  position: relative;
+  bottom: 15.8rem;
+  letter-spacing: 0.05rem;
+}
+.imageTextName{
+  position: relative;
+  bottom: 16rem;
+  right: -1rem;
+}
+.imageTextCurrency{
+  position: relative;
+  bottom: 14.3rem;
+  left: -15.3rem;
+}
+
+.imageTextAmount{
+  position: relative;
+  bottom: 15.9rem;
+  left: -14.6rem;
+}
+
+
+
+.imageTextIbanWhite{
+  color: white;
+  position: relative;
+  bottom: 15.5rem;
+  letter-spacing: 0.05rem;
+}
+.imageTextNameWhite{
+  color: white;
+  position: relative;
+  bottom: 20rem;
+  right: -6rem;
+}
+.imageTextCurrencyWhite{
+  color: white;
+  position: relative;
+  bottom: 14.3rem;
+  left: -14.3rem;
+}
+
+.imageTextAmountWhite{
+  color: white;
+  position: relative;
+  bottom: 15.9rem;
+  left: -13.6rem;
+}
+
+.mySideBar{
+}
+
+.romoveButton{
+  position: relative;
+  left: 20vw;
+  top: 13.5vw;
+  transition: all .5s ease;
+  color: #fff;
+  border: 3px solid #ff9100;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 35px;
+  background-color : #ff9100;
+  padding: 30px;
+  outline: none;
+  border-radius: 50%;
+}
+
+.romoveButton:hover{
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #ff9100;
+}
+
+.trashCanDiv{
+  position: absolute;
+  transform: scale(3);
+  left: 2rem;
+}
+
+.myButtonPayment{
+  transition: all .5s ease;
+  position: relative;
+  display: inline;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ff9100;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  height: 80px;
+  top: -20vh;
+}
+
+.myButtonPayment:hover{
+  transform: scale(1.1);
+  display: inline;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ff9100;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  height: 80px;
+}
+
+.leftSide{
+  position: relative;
+  left: -50vh;
+  top: -15.3vh;
+}
+
+.rightSide{
+  position: relative;
+  right: -35vh;
+  top: 0.5vh;
+}
+
+.float-container {
+  border: 3px solid #fff;
+}
+
+.float-child-left{
+  position: relative;
+  width: 35%;
+  float: left;
+  left: +15%;
+  padding: 20px;
+}
+
+.float-child-right{
+  position: relative;
+  width: 35%;
+  left: -8%;
+  float: right;
+  padding: 20px;
+}
+
+.myHeader-float {
+  background: linear-gradient(0deg, #154944  0%, rgb(169,184,195) 100%);
+  min-height: 95vh;
+  flex-direction: column;
+  display: flow-root;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(0deg, #21726A 0%, #33B3A6 100%);
+}
+
+.navBarTitle{
+  font-weight: bold;
+  font-style: italic;
+  top: 0.5vh;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  position: relative;
+  left: -20vw;
+}
+
+
+.navbarButton{
+  transition: all .5s ease;
+  position: relative;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: #ff9100;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+.navbarButton:hover{
+  transform: scale(1.1);
+  transition: all .5s ease;
+  position: relative;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: #ff9100;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+
+.navbarButtonGreen{
+  margin-left: 15px;
+  transition: all .5s ease;
+  position: relative;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: darkgreen;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+
+.navbarButtonGreen2{
+  transition: all .5s ease;
+  position: relative;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: darkgreen;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+.navbarButtonGreen2:hover{
+  transform: scale(1.1);
+  transition: all .5s ease;
+  position: relative;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: darkgreen;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+.navbarButtonGreen:hover{
+  margin-left: 15px;
+  transform: scale(1.1);
+  transition: all .5s ease;
+  position: relative;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: darkgreen;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+
+.navbarButtonRed{
+  margin-left: 15px;
+  transition: all .5s ease;
+  position: relative;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: darkred;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+.navbarButtonRed:hover{
+  margin-left: 15px;
+  transform: scale(1.1);
+  transition: all .5s ease;
+  position: relative;
+  align-items: center;
+  display: inline;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  background: darkred;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(93, 78, 67, 0.6);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 40px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

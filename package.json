@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-select": "^5.5.4",
+    "react-table-6": "^6.11.0"
+  }
+}

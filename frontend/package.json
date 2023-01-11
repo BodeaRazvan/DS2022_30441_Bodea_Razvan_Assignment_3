@@ -1,0 +1,48 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "chart.js": "^3.9.1",
+    "immer": "^9.0.15",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^18.2.0",
+    "react-pro-sidebar": "^0.7.1",
+    "react-router": "^6.4.2",
+    "react-scripts": "^5.0.1",
+    "react-stomp": "^5.1.0",
+    "react-table": "^7.8.0",
+    "react-table-6": "^6.11.0",
+    "reactjs-popup": "^2.0.5",
+    "sockjs": "^0.3.24",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@reduxjs/toolkit": "^1.8.6",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.2"
+  }
+}
